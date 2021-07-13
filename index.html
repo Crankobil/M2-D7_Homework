@@ -32,14 +32,42 @@
     }
 
     /* EX4) Write a selector to target the first blogpost*/
+    body > div > div.row.mb-2 > div:nth-child(1) > div > div.col.p-4.d-flex.flex-column.position-static {
+        border: 2px solid black;
+    }
     
-            EX5) Write a selector to target the "even" links in the navbar
-            EX6) Write a selector to target the last blog post
-            EX7) Write a selector to target all the li into the first ordered-list in the sidebar ( Archives )
-            EX8) Write a selector to target the second post author
-            EX9) Write a selector to target the "back to top" link     #### EXTRA Try doing it without targeting the footer element directly
-            EX10) Write a selector to target the footer
-        */
+    /*EX5) Write a selector to target the "even" links in the navbar*/
+    div.nav-scroller.py-1.mb-2 > nav:nth-child(2n) {
+        background-color: chartreuse;
+    }
+    
+    /* EX6) Write a selector to target the last blog post*/
+    div.nav-scroller.py-1.mb-2 > nav:last-child {
+        background-color: rgb(255, 0, 85);
+
+    /*EX7) Write a selector to target all the li into the first ordered-list in the sidebar ( Archives )*/
+    ol.list-unstyled.mb-0 {
+    
+    }
+    
+    /*EX8) Write a selector to target the second post author*/
+    body > main > div > div > div:nth-child(3) > p.blog-post-meta > a {
+     
+    }
+    
+    /*EX9) Write a selector to target the "back to top" link*/     
+    body > footer > p:nth-child(2) > a {
+        background-color: grey;
+    }
+    
+    
+    /*#### EXTRA Try doing it without targeting the footer element directly*/
+            
+    
+    /*EX10) Write a selector to target the footer*/
+    body > footer {
+        color: indianred;
+    }
 
     </style>
     <meta charset="utf-8" />
